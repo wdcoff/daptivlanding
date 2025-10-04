@@ -1,0 +1,26 @@
+{
+  "name": "daptivlanding",
+  "version": "1.0.0",
+  "description": "**Github**: https://github.com/PaulleDemon/awesome-landing-pages",
+  "main": "index.js",
+  "scripts": {
+    "start:tailwind": "npx tailwindcss -i ./css/tailwind-runtime.css -o ./css/tailwind-output.css --watch",
+    "build:tailwind": "npx tailwindcss -i ./css/tailwind-runtime.css -o ./css/tailwind-build.css --minify",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wdcoff/daptivlanding.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/wdcoff/daptivlanding/issues"
+  },
+  "homepage": "https://github.com/wdcoff/daptivlanding#readme",
+  "devDependencies": {
+    "tailwindcss": "^4.1.14"
+  }
+}
