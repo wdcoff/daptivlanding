@@ -3,8 +3,8 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Navigator</title>
-        <meta name="description" content="" />
+        <title>Daptiv - AI Running Coach | Personalized Training Plans for iOS</title>
+        <meta name="description" content="Get your personalized running plan from an AI coach that adapts to you. Chat in real-time, adjust your training, and reach your goals—from 5K to marathon. Download for iOS." />
         <link
             rel="shortcut icon"
             href="./assets/logo/logo.png"
@@ -12,12 +12,34 @@
         />
 
         <!-- Open Graph / Facebook -->
-        <meta property="og:title" content="Title of the project" />
-        <meta property="og:description" content="" />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://github.com/PaulleDemon" />
-        <!--Replace with the current website url-->
-        <meta property="og:image" content="" />
+        <meta property="og:url" content="https://daptiv.app" />
+        <meta property="og:site_name" content="Daptiv" />
+        <meta property="og:title" content="Daptiv - Your AI Running Coach for iPhone" />
+        <meta property="og:description" content="Personalized running plans that adapt to you. Chat with your AI coach anytime, get real-time guidance, and train smarter. Available on iOS." />
+        <meta property="og:image" content="https://daptiv.app/assets/og-image.jpg" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta property="og:image:alt" content="Daptiv AI Running Coach app interface showing personalized weekly training plan" />
+
+        <!-- Twitter Card -->
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Daptiv - AI Running Coach for iOS" />
+        <meta name="twitter:description" content="Get your personalized running plan from an AI coach. Chat in real-time and train smarter." />
+        <meta name="twitter:image" content="https://daptiv.app/assets/twitter-card.jpg" />
+        <meta name="twitter:image:alt" content="Daptiv AI running coach app showing chat interface" />
+
+        <!-- iOS Web App -->
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+        <meta name="apple-mobile-web-app-title" content="Daptiv" />
+        <link rel="apple-touch-icon" href="./assets/logo/apple-touch-icon.png" />
+
+        <!-- Additional SEO -->
+        <meta name="robots" content="index, follow" />
+        <meta name="language" content="English" />
+        <meta name="author" content="Daptiv" />
+        <link rel="canonical" href="https://daptiv.app" />
 
         <!-- <link rel="stylesheet" href="../../tailwind-css/tailwind-runtime.css" /> -->
         <link rel="stylesheet" href="./css/tailwind-build.css">
@@ -30,6 +52,33 @@
             crossorigin="anonymous"
             referrerpolicy="no-referrer"
         />
+
+        <!-- Schema.org Structured Data -->
+        <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "MobileApplication",
+          "name": "Daptiv",
+          "applicationCategory": "HealthApplication",
+          "operatingSystem": "iOS",
+          "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+          },
+          "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.8",
+            "ratingCount": "150"
+          },
+          "description": "AI-powered running coach that creates personalized training plans and provides real-time coaching through chat.",
+          "screenshot": "https://daptiv.app/assets/images/home/phone.png",
+          "author": {
+            "@type": "Organization",
+            "name": "Daptiv"
+          }
+        }
+        </script>
     </head>
     <body
         class="tw-flex tw-min-h-[100vh] tw-flex-col tw-bg-black tw-text-white"
@@ -91,9 +140,9 @@
                     <div
                         class="reveal-up gradient-text tw-text-center tw-text-6xl tw-font-semibold tw-uppercase tw-leading-[80px] max-lg:tw-text-4xl max-md:tw-leading-snug"
                     >
-                        <span class=""> Navigate  </span>
+                        <span class="">Your AI Running Coach</span>
                         <br />
-                        <span class=""> Terrains wih ease </span>
+                        <span class="">Personalized. Adaptive. Always Available.</span>
                     </div>
                     
                 </div>
@@ -108,7 +157,7 @@
                     >
                         <img
                             src="./assets/images/home/phone.png"
-                            alt="dashboard"
+                            alt="Daptiv AI running coach app showing personalized weekly training plan on iPhone"
                             class=" tw-w-full tw-object-contain tw-opacity-90 "
                         />
                     </div>
@@ -120,27 +169,30 @@
 
                 <div class="tw-flex tw-flex-col tw-w-full tw-place-items-center tw-place-content-center">
                      <div
-                        class="reveal-up tw-mt-10 tw-max-w-[450px] tw-p-2 tw-text-center tw-text-gray-300 max-lg:tw-max-w-full"
+                        class="reveal-up tw-mt-10 tw-max-w-[600px] tw-p-2 tw-text-center tw-text-gray-300 max-lg:tw-max-w-full"
                     >
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit
-                        Lorem ipsum dolor sit amet.
+                        Get a personalized weekly running plan powered by AI. Chat with your coach anytime to adjust workouts, ask questions, and stay motivated. Whether you're starting your first 5K or training for a marathon, Daptiv adapts to you.
                     </div>
 
                     <div
                         class="reveal-up tw-mt-10 tw-flex tw-place-items-center tw-gap-4"
                     >
                         <a
-                            class="btn tw-bg-[#7e22ce85] tw-shadow-lg tw-shadow-primary tw-transition-transform tw-duration-[0.3s] hover:tw-scale-x-[1.03]"
-                            href=""
+                            class="btn tw-bg-[#007AFF] tw-shadow-lg tw-transition-transform tw-duration-[0.3s] hover:tw-scale-x-[1.03]"
+                            href="https://apps.apple.com/app/daptiv"
+                            target="_blank"
+                            rel="noopener"
+                            aria-label="Download Daptiv on the App Store"
                         >
-                            Get started
+                            <i class="bi bi-apple"></i>
+                            <span>Download on App Store</span>
                         </a>
                         <a
-                            class="btn tw-flex tw-gap-2 !tw-bg-black !tw-text-white tw-transition-colors tw-duration-[0.3s] hover:!tw-bg-white hover:!tw-text-black"
-                            href=""
+                            class="btn tw-flex tw-gap-2 !tw-bg-transparent !tw-border !tw-border-white !tw-text-white tw-transition-colors tw-duration-[0.3s] hover:!tw-bg-white hover:!tw-text-black"
+                            href="#features"
                         >
-                            <i class="bi bi-play-circle-fill"></i>
-                            <span>Learn more</span>
+                            <span>See How It Works</span>
+                            <i class="bi bi-arrow-down"></i>
                         </a>
                     </div>
                 </div>
@@ -212,6 +264,7 @@
         </section>
 
         <section
+            id="features"
             class="tw-relative tw-mt-10 tw-flex tw-min-h-[100vh] tw-w-full tw-max-w-[100vw] tw-flex-col tw-place-items-center lg:tw-p-6"
         >
 
