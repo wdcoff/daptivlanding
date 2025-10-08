@@ -58,9 +58,9 @@ Based on analysis of the template and Daptiv app context, I recommend a **5-phas
 
 ### 3.2 Replace Articles Section
 - Transform into "How It Works" section with 3 steps:
-  1. "Tell us about your running experience"
+  1. "Tell the coach about your running experience"
   2. "Get your personalized weekly plan"
-  3. "Train smarter with AI guidance"
+  3. "Train smarter with AI guidance - adapts when you need it"
 - Use existing article card styling, replace images with relevant visuals
 
 ### 3.3 Bottom CTA Section
