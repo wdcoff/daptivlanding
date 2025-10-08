@@ -97,7 +97,7 @@
                 class="collapsible-header animated-collapse max-lg:tw-shadow-md"
                 id="collapsed-header-items"
             >
-                <div
+                <!-- <div
                     class="tw-flex tw-h-full tw-w-max tw-gap-5 tw-text-base max-lg:tw-mt-[30px] max-lg:tw-flex-col max-lg:tw-place-items-end max-lg:tw-gap-5 lg:tw-mx-auto lg:tw-place-items-center"
                 >
                     <a class="header-links" href=""> About us </a>
@@ -105,7 +105,7 @@
                     <a class="header-links" href=""> Solutions </a>
                     <a class="header-links" href=""> Features </a>
                     <a class="header-links" href=""> Company </a>
-                </div>
+                </div> -->
                 <div
                     class="tw-mx-4 tw-flex tw-place-items-center tw-gap-[20px] tw-text-base max-md:tw-w-full max-md:tw-flex-col max-md:tw-place-content-center"
                 >
@@ -666,65 +666,42 @@
         </section>
 
         <footer
-            class="tw-mt-auto tw-flex tw-w-full tw-place-content-around tw-gap-3 tw-p-[5%] tw-px-[10%] tw-text-white max-md:tw-flex-col"
+            class="tw-mt-auto tw-flex tw-w-full tw-flex-col tw-place-items-center tw-gap-8 tw-p-[5%] tw-py-12 tw-text-white tw-border-t tw-border-gray-800"
         >
-            <div
-                class="tw-flex tw-h-full tw-w-[250px] tw-flex-col tw-place-items-center tw-gap-6 max-md:tw-w-full"
-            >
+            <!-- Logo and Tagline -->
+            <div class="tw-flex tw-flex-col tw-place-items-center tw-gap-4">
                 <img
                     src="./assets/logo/logo.png"
-                    alt="logo"
-                    srcset=""
-                    class="tw-max-w-[120px]"
+                    alt="Daptiv Logo"
+                    class="tw-max-w-[100px]"
                 />
-                <div>
-                    2 Lord Edward St,
-                    <br />
-                    D02 P634,
-                    <br />
-                    United States
-                </div>
-                <div class="tw-mt-3 tw-text-lg tw-font-semibold">Follow us</div>
-                <div class="tw-flex tw-gap-4 tw-text-2xl">
-                    <a href="" aria-label="Facebook">
-                        <i class="bi bi-facebook"></i>
-                    </a>
-                    <a
-                        href="https://twitter.com/@pauls_freeman"
-                        aria-label="Twitter"
-                    >
-                        <i class="bi bi-twitter"></i>
-                    </a>
-                    <a
-                        href="https://instagram.com/"
-                        class="tw-h-[40px] tw-w-[40px]"
-                        aria-label="Instagram"
-                    >
-                        <i class="bi bi-instagram"></i>
-                    </a>
-                </div>
+                <p class="tw-text-gray-400 tw-text-center tw-max-w-md">
+                    Your AI running coach that adapts to you
+                </p>
             </div>
 
-            <div class="tw-flex tw-h-full tw-w-[250px] tw-flex-col tw-gap-4">
-                <h2 class="tw-text-3xl max-md:tw-text-xl">Company</h2>
-                <div class="tw-flex tw-flex-col tw-gap-3 max-md:tw-text-sm">
-                    <a href="" class="footer-link">Use cases</a>
-                    <a href="" class="footer-link">Integrations</a>
-                    <a href="" class="footer-link">Change logs</a>
-                    <a href="" class="footer-link">Blogs</a>
-                    <a href="" class="footer-link">Contact</a>
-                </div>
+            <!-- Download CTA -->
+            <a
+                class="btn tw-bg-white tw-text-black tw-shadow-lg tw-transition-transform tw-duration-[0.3s] hover:tw-scale-[1.03]"
+                href="https://apps.apple.com/app/daptiv"
+                target="_blank"
+                rel="noopener"
+                aria-label="Download Daptiv on the App Store"
+            >
+                <i class="bi bi-apple"></i>
+                <span>Download on App Store</span>
+            </a>
+
+            <!-- Legal Links -->
+            <div class="tw-flex tw-gap-6 tw-text-sm tw-text-gray-400">
+                <!-- <a href="/privacy" class="hover:tw-text-white tw-transition-colors">Privacy Policy</a> -->
+                <!-- <a href="/terms" class="hover:tw-text-white tw-transition-colors">Terms of Service</a> -->
+                <a href="mailto:support@daptiv.app" class="hover:tw-text-white tw-transition-colors">Contact</a>
             </div>
 
-            <div class="tw-flex tw-h-full tw-w-[250px] tw-flex-col tw-gap-4">
-                <h2 class="tw-text-3xl max-md:tw-text-xl">Resources</h2>
-                <div class="tw-flex tw-flex-col tw-gap-3 max-md:tw-text-sm">
-                    <a href="" class="footer-link">About us</a>
-                    <a href="" class="footer-link">FAQ</a>
-                    <a href="" class="footer-link">Contact Us</a>
-                    <a href="" class="footer-link">Blogs</a>
-                    <a href="" class="footer-link">Privacy policy</a>
-                </div>
+            <!-- Copyright -->
+            <div class="tw-text-sm tw-text-gray-500">
+                © 2024 Daptiv. All rights reserved.
             </div>
         </footer>
     </body>
