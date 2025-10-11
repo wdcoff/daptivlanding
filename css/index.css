@@ -111,9 +111,9 @@ header > .collapsible-header{
 .btn{
     padding: 10px 15px;
     width: max-content;
-    border-radius: 5px;
-    color: var(--btn-color);
-    background-color: var(--btn-bg);
+    border-radius: 30px;
+    color: #000;
+    background-color: #fff;
     justify-content: center;
     align-items: center;
     display: flex;
