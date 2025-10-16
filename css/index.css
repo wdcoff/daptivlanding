@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 
 :root{
 
@@ -15,7 +15,7 @@
 
 html {
     scroll-behavior: smooth;
-    font-family: "Ubuntu", sans-serif;
+    font-family: "Inter", sans-serif;
 }
 
 header{
@@ -64,6 +64,10 @@ header > .collapsible-header{
     background: linear-gradient(90deg, rgba(215,215,215,1) 18%, rgba(136,136,136,1) 71%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+.hero-section .gradient-text {
+    font-family: "Ubuntu", sans-serif;
 }
 
 .signup-img-section{
