@@ -1,0 +1,18 @@
+{
+  "name": "Daptiv - Adaptive AI Running Coach",
+  "short_name": "Daptiv",
+  "description": "Training plans that adapt to how you actually feel. AI coach that adjusts when life happens.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#000000",
+  "theme_color": "#f5f5f5",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "/assets/logo/Dlogo.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

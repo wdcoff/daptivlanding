@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://daptiv.app/</loc>
+    <lastmod>2025-10-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://daptiv.app/assets/images/screenshots/daptiv-weekly-plan.jpg</image:loc>
+      <image:title>Daptiv AI Running Coach - Weekly Training Plan</image:title>
+      <image:caption>Adaptive weekly training plan with personalized workouts</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://daptiv.app/assets/images/screenshots/daptiv-chat-adjustment.jpg</image:loc>
+      <image:title>Daptiv AI Coach - Workout Adjustment</image:title>
+      <image:caption>AI coach proposing workout adjustment based on fatigue</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://daptiv.app/assets/images/screenshots/daptiv-workout-feedback.jpg</image:loc>
+      <image:title>Daptiv - Workout Rating and Feedback</image:title>
+      <image:caption>Workout rating with RPE scale and subjective feedback</image:caption>
+    </image:image>
+  </url>
+</urlset>

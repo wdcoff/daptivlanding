@@ -1,10 +1,15 @@
 <!doctype html>
-<html lang="en">
+<html lang="en-US">
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Daptiv - AI Running Coach | Personalized Training Plans for iOS</title>
-        <meta name="description" content="Get your personalized running plan from an AI coach that adapts to you. Chat in real-time, adjust your training, and reach your goals—from 5K to marathon. Download for iOS." />
+
+        <!-- Resource Hints for Performance -->
+        <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin />
+        <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com" />
+
+        <title>Adaptive AI Running Coach | Training That Bends with Life, Not Breaks You</title>
+        <meta name="description" content="Training plans that adapt to how you actually feel. AI coach that adjusts when life happens. Built for consistency in real life, not perfect spreadsheets. iOS app." />
         <link
             rel="shortcut icon"
             href="./Dlogo.svg"
@@ -17,7 +22,7 @@
         <meta property="og:site_name" content="Daptiv" />
         <meta property="og:title" content="Daptiv - Your AI Running Coach for iPhone" />
         <meta property="og:description" content="Personalized running plans that adapt to you. Chat with your AI coach anytime, get real-time guidance, and train smarter. Available on iOS." />
-        <meta property="og:image" content="https://daptiv.app/assets/og-image.jpg" />
+        <meta property="og:image" content="https://daptiv.app/assets/images/og-image-v1.jpg" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
         <meta property="og:image:alt" content="Daptiv AI Running Coach app interface showing personalized weekly training plan" />
@@ -26,20 +31,29 @@
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Daptiv - AI Running Coach for iOS" />
         <meta name="twitter:description" content="Get your personalized running plan from an AI coach. Chat in real-time and train smarter." />
-        <meta name="twitter:image" content="https://daptiv.app/assets/twitter-card.jpg" />
+        <meta name="twitter:image" content="https://daptiv.app/assets/images/og-image-v1.jpg" />
         <meta name="twitter:image:alt" content="Daptiv AI running coach app showing chat interface" />
 
         <!-- iOS Web App -->
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
         <meta name="apple-mobile-web-app-title" content="Daptiv" />
-        <link rel="apple-touch-icon" href="./assets/logo/apple-touch-icon.png" />
+        <meta name="apple-itunes-app" content="app-id=6751173422" />
+        <meta name="theme-color" content="#f5f5f5" />
+        <link rel="apple-touch-icon" sizes="180x180" href="./assets/logo/Dlogo.svg" />
+        <!-- TODO: Create proper apple-touch-icon PNG sizes (180x180, 152x152, 120x120, 76x76) from Dlogo.svg for better compatibility -->
+
+        <!-- App Links Protocol -->
+        <meta property="al:ios:app_store_id" content="6751173422" />
+        <meta property="al:ios:app_name" content="Daptiv" />
+        <meta property="al:ios:url" content="daptiv://" />
 
         <!-- Additional SEO -->
         <meta name="robots" content="index, follow" />
         <meta name="language" content="English" />
         <meta name="author" content="Daptiv" />
         <link rel="canonical" href="https://daptiv.app" />
+        <link rel="manifest" href="/manifest.json" />
 
         <!-- <link rel="stylesheet" href="../../tailwind-css/tailwind-runtime.css" /> -->
         <link rel="stylesheet" href="./css/tailwind-build.css">
@@ -66,17 +80,136 @@
             "price": "0",
             "priceCurrency": "USD"
           },
-          "aggregateRating": {
-            "@type": "AggregateRating",
-            "ratingValue": "4.8",
-            "ratingCount": "150"
-          },
           "description": "AI-powered running coach that creates personalized training plans and provides real-time coaching through chat.",
-          "screenshot": "https://daptiv.app/assets/images/screenshots/daptiv-weekly-plan.png",
+          "screenshot": "https://daptiv.app/assets/images/screenshots/daptiv-weekly-plan.jpg",
           "author": {
             "@type": "Organization",
             "name": "Daptiv"
           }
+        }
+        </script>
+
+        <!-- Organization Schema -->
+        <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          "name": "Daptiv",
+          "url": "https://daptiv.app",
+          "logo": "https://daptiv.app/assets/logo/Dlogo.svg",
+          "description": "AI-powered running coach for injury recovery and busy schedules. Training plans that adapt when life gets chaotic.",
+          "contactPoint": {
+            "@type": "ContactPoint",
+            "email": "support@daptiv.app",
+            "contactType": "Customer Support"
+          },
+          "sameAs": []
+        }
+        </script>
+
+        <!-- FAQ Schema -->
+        <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "I'm not fast enough for a coach. Is Daptiv really for me?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Absolutely. Whether you're chasing a PR, coming back from injury, or just trying to stay consistent, Daptiv meets you where you are and adapts when life doesn't go to plan. Whether you're running 15-minute miles or 7-minute miles, the AI adapts to your body, not some arbitrary standard. You don't need permission to deserve a two-way coaching experience."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "I'm concerned about privacy with AI coaching apps. Should I be?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Not with Daptiv. We never sell your data. Period. Your information is anonymized and used only to power your training plan and coaching. We couldn't tie it back to you personally even if we wanted to. You're in control - delete your data anytime from the app. We only collect what's needed to coach you effectively."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can I actually talk to the AI like a real coach, or is it just canned responses?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Real, contextual conversation. You can explain doubts, ask why am I doing this workout, share that your knee felt weird, or admit you're dreading tomorrow's run. The AI maintains context about your training history, goals, and life circumstances so it doesn't just spit out generic advice. It feels more like texting a coach who knows your story."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "I'm worried I'll start strong and quit in two weeks like every other time. What's different?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The app is designed to prevent the burnout-quit cycle. Static plans fail because they don't adapt when you miss a workout, get sick, or life gets chaotic—so you fall behind, feel guilty, and quit. Daptiv removes that spiral: miss a run, tell your coach, plan adjusts, you keep going. No guilt. No falling off the wagon. Just progress at your pace."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How do I know if the training advice is legit, or just AI making stuff up?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Daptiv's training plans are grounded in proven running science and coaching principles, including progressive overload, periodization, and recovery cycles. The AI applies these principles to your specific context, so you get evidence-based training that actually fits your life."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What if I miss workouts? Will the plan just pile up and make me feel worse?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "No guilt, just recalibration. Unlike static plans that resume as if nothing happened, Daptiv rebuilds your week when life happens—sick kids, work deadlines, or just a rough day. You tell your AI coach what happened, and the plan adjusts so you never feel behind. The goal is progress, not perfection."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "I'm coming back from injury or time off. Will this push me too hard too fast?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Daptiv is built for comeback runners. Your onboarding conversation covers past injuries, how long you've been off, and your current fitness. The AI builds at a rate you prefer, listening to your RPE (rate of perceived exertion) and subjective feeling after each run. If something feels off, you say so, and the plan adjusts before you get hurt again."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How much time do I actually need to commit? I have a busy schedule.",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "You build your schedule, not the other way around. During onboarding, you tell Daptiv which days you can run, how much time you have, and when your long run fits best. The AI works around your life, not against it. And when your schedule implodes (because it will), you can recalibrate mid-week without starting over."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Does this work if I can only run 2-3 times per week?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. Daptiv builds plans for your actual availability, whether that's 3 runs or 6 runs per week. The AI optimizes what you can do, rather than prescribing what you should do and setting you up to fail. Consistency on a 3-day plan beats burnout on a 5-day plan every time."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What if I need to add cross training, or run on a treadmill sometimes?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "You control the modalities and training context. Mention to your coach that you prefer to bike two days a week during onboarding. And you can chat with your AI coach anytime to adjust for treadmill runs, outdoor conditions, or traveling. The plan adapts to your context, not a one-size-fits-all template."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "I've never used an AI coach before. Will it feel weird or robotic?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Most users are surprised how natural it feels. Research shows conversational AI coaching achieves similar trust and engagement as human coaches when it's done right. Daptiv's AI doesn't just answer questions; it remembers your goals, is always available, and adjusts your plan based on actual feedback. It's less chatbot and more coach who doesn't sleep."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can I ask dumb questions without judgment?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "There are no dumb questions. Whether you're wondering why your shins hurt, if you should run in the rain, or what tempo pace actually means, the AI coach explains it in context without making you feel like a beginner. You're learning as you go, and that's exactly how it should work."
+              }
+            }
+          ]
         }
         </script>
     </head>
@@ -110,7 +243,7 @@
                     class="tw-mx-4 tw-flex tw-place-items-center tw-gap-[20px] tw-text-base max-md:tw-w-full max-md:tw-flex-col max-md:tw-place-content-center"
                 >
                     <a
-                        href="https://apps.apple.com/app/daptiv"
+                        href="https://apps.apple.com/us/app/daptiv/id6751173422"
                         target="_blank"
                         rel="noopener"
                         aria-label="Download Daptiv on the App Store"
@@ -161,7 +294,7 @@
                     >
                         <a
                             class="btn tw-rounded-[30px] tw-bg-white tw-text-black tw-shadow-lg tw-transition-transform tw-duration-[0.3s] hover:tw-scale-x-[1.03] max-md:tw-w-full"
-                            href="https://apps.apple.com/app/daptiv"
+                            href="https://apps.apple.com/us/app/daptiv/id6751173422?mt=8&ct=landing_hero"
                             target="_blank"
                             rel="noopener"
                             aria-label="Download Daptiv on the App Store"
@@ -171,7 +304,7 @@
                         </a>
                         <a
                             class="btn tw-flex tw-gap-2 !tw-bg-transparent !tw-border !tw-border-white !tw-text-white tw-transition-colors tw-duration-[0.3s] hover:!tw-bg-white hover:!tw-text-black max-md:tw-w-full"
-                            href="#features"
+                            href="#what-makes-different"
                         >
                             <span>See How It Works</span>
                             <i class="bi bi-arrow-down"></i>
@@ -188,8 +321,9 @@
                         id="dashboard"
                     >
                         <img
-                            src="./assets/images/screenshots/daptiv-weekly-plan.png"
-                            alt="Daptiv app showing adaptive weekly training plan with personalized workouts and focus areas"
+                            src="./assets/images/screenshots/daptiv-weekly-plan.jpg"
+                            alt="Adaptive AI running coach weekly training plan for busy runners showing personalized workouts that adjust to life stress and fatigue"
+                            loading="lazy"
                             class=" tw-w-full tw-object-contain tw-opacity-90 "
                         />
                     </div>
@@ -203,11 +337,25 @@
 
 
         <section
+            id="what-makes-different"
+            class="tw-relative tw-mt-20 tw-flex tw-min-h-[60vh] tw-w-full tw-max-w-[100vw] tw-flex-col tw-place-items-center tw-place-content-center tw-p-6"
+        >
+            <div class="tw-max-w-[900px] tw-flex tw-flex-col tw-gap-6 tw-text-center max-md:tw-px-4">
+                <h2 class="tw-text-4xl tw-font-medium tw-text-white max-md:tw-text-3xl">
+                    What Makes Daptiv Different
+                </h2>
+                <p class="tw-text-xl tw-text-gray-300 tw-leading-relaxed max-md:tw-text-lg">
+                    Daptiv builds you up and pulls you back when needed, like a real coach would. Most training apps follow a fixed progression: hit your paces, stack intensity, repeat. That works great until you get sick, miss a week, or show up mentally fried. Then the plan resumes as if nothing happened, stacking fatigue until you burn out or get injured. Daptiv adjusts intensity, volume, and recovery in real time based on your feedback, so hard workouts happen when your body can actually absorb them—not just because it's Tuesday.
+                </p>
+            </div>
+        </section>
+
+        <section
             id="features"
             class="tw-relative tw-mt-10 tw-flex tw-min-h-[100vh] tw-w-full tw-max-w-[100vw] tw-flex-col tw-place-items-center lg:tw-p-6"
         >
 
-            <h2 class="tw-text-4xl max-md:tw-text-3xl max-md:tw-mt-6 max-md:tw-pt-4">Running plans that finally fit your real life</h2>
+            <h2 class="tw-text-center tw-text-4xl max-md:tw-text-3xl max-md:tw-mt-6 max-md:tw-pt-4">Running plans that finally fit your real life</h2>
 
             <div
                 class="reveal-up tw-mt-[5%] tw-flex tw-h-full tw-w-full tw-place-content-center tw-gap-8 tw-p-4 max-lg:tw-max-w-full max-lg:tw-flex-col"
@@ -316,8 +464,9 @@
                         class="tw-top-20 lg:tw-sticky tw-max-h-[800px] tw-h-full tw-max-w-[850px] max-lg:tw-max-h-fit max-lg:tw-max-w-[320px] tw-overflow-hidden tw-rounded-lg"
                     >
                         <img
-                            src="./assets/images/screenshots/daptiv-chat-adjustment.png"
-                            alt="Daptiv AI coach proposing workout adjustment based on low sleep and fatigue"
+                            src="./assets/images/screenshots/daptiv-chat-adjustment.jpg"
+                            alt="AI running coach chat interface proposing adaptive workout adjustment based on poor sleep low energy flexible training plan"
+                            loading="lazy"
                             class="tw-h-full tw-w-full tw-object-contain"
                         />
                     </div>
@@ -345,10 +494,10 @@
                     class="tw-mt-6 tw-flex tw-max-w-[80%] tw-flex-wrap tw-place-content-center tw-gap-8 max-lg:tw-flex-col"
                 >
                     <div
-                        class="reveal-up tw-flex tw-h-[200px] tw-w-[450px] tw-gap-8 tw-rounded-xl tw-border-[1px] tw-border-outlineColor tw-bg-secondary tw-p-8 max-md:tw-w-[320px]"
+                        class="reveal-up tw-flex tw-min-h-[200px] tw-w-[450px] tw-gap-8 tw-rounded-xl tw-border-[1px] tw-border-outlineColor tw-bg-secondary tw-p-8 max-md:tw-w-[320px]"
                     >
                         <div class="tw-text-4xl max-md:tw-text-2xl tw-text-orange-500">
-                            <i class="bi bi-robot"></i>
+                            <i class="bi bi-arrows-move"></i>
                         </div>
 
                         <div class="tw-flex tw-flex-col tw-gap-4">
@@ -362,7 +511,7 @@
                     </div>
 
                     <div
-                        class="reveal-up tw-flex tw-h-[200px] tw-w-[450px] tw-gap-8 tw-rounded-xl tw-border-[1px] tw-border-outlineColor tw-bg-secondary tw-p-8 max-md:tw-w-[320px]"
+                        class="reveal-up tw-flex tw-min-h-[200px] tw-w-[450px] tw-gap-8 tw-rounded-xl tw-border-[1px] tw-border-outlineColor tw-bg-secondary tw-p-8 max-md:tw-w-[320px]"
                     >
                         <div class="tw-text-4xl max-md:tw-text-2xl tw-text-orange-500">
                             <i class="bi bi-chat-dots"></i>
@@ -379,7 +528,7 @@
                     </div>
 
                     <div
-                        class="reveal-up tw-flex tw-h-[200px] tw-w-[450px] tw-gap-8 tw-rounded-xl tw-border-[1px] tw-border-outlineColor tw-bg-secondary tw-p-8 max-md:tw-w-[320px]"
+                        class="reveal-up tw-flex tw-min-h-[200px] tw-w-[450px] tw-gap-8 tw-rounded-xl tw-border-[1px] tw-border-outlineColor tw-bg-secondary tw-p-8 max-md:tw-w-[320px]"
                     >
                         <div class="tw-text-4xl max-md:tw-text-2xl tw-text-orange-500">
                             <i class="bi bi-arrow-repeat"></i>
@@ -396,7 +545,7 @@
                     </div>
 
                     <div
-                        class="reveal-up tw-flex tw-h-[200px] tw-w-[450px] tw-gap-8 tw-rounded-xl tw-border-[1px] tw-border-outlineColor tw-bg-secondary tw-p-8 max-md:tw-w-[320px]"
+                        class="reveal-up tw-flex tw-min-h-[200px] tw-w-[450px] tw-gap-8 tw-rounded-xl tw-border-[1px] tw-border-outlineColor tw-bg-secondary tw-p-8 max-md:tw-w-[320px]"
                     >
                         <div class="tw-text-4xl max-md:tw-text-2xl tw-text-orange-500">
                             <i class="bi bi-graph-up"></i>
@@ -413,7 +562,7 @@
                     </div>
 
                     <div
-                        class="reveal-up tw-flex tw-h-[200px] tw-w-[450px] tw-gap-8 tw-rounded-xl tw-border-[1px] tw-border-outlineColor tw-bg-secondary tw-p-8 max-md:tw-w-[320px]"
+                        class="reveal-up tw-flex tw-min-h-[200px] tw-w-[450px] tw-gap-8 tw-rounded-xl tw-border-[1px] tw-border-outlineColor tw-bg-secondary tw-p-8 max-md:tw-w-[320px]"
                     >
                         <div class="tw-text-4xl max-md:tw-text-2xl tw-text-orange-500">
                             <i class="bi bi-award"></i>
@@ -430,7 +579,7 @@
                     </div>
 
                     <div
-                        class="reveal-up tw-flex tw-h-[200px] tw-w-[450px] tw-gap-8 tw-rounded-xl tw-border-[1px] tw-border-outlineColor tw-bg-secondary tw-p-8 max-md:tw-w-[320px]"
+                        class="reveal-up tw-flex tw-min-h-[200px] tw-w-[450px] tw-gap-8 tw-rounded-xl tw-border-[1px] tw-border-outlineColor tw-bg-secondary tw-p-8 max-md:tw-w-[320px]"
                     >
                         <div class="tw-text-4xl max-md:tw-text-2xl tw-text-orange-500">
                             <i class="bi bi-shield-check"></i>
@@ -542,11 +691,11 @@
                     <div
                         class="faq-accordion tw-flex tw-w-full tw-select-none tw-text-xl max-md:tw-text-lg"
                     >
-                        <span>What license are the source code?</span>
+                        <span>I'm not fast enough for a coach. Is Daptiv really for me?</span>
                         <i class="bi bi-plus tw-ml-auto tw-font-semibold"></i>
                     </div>
                     <div class="content">
-                        All the templates are under MIT license
+                        Absolutely. Whether you're chasing a PR, coming back from injury, or just trying to stay consistent, Daptiv meets you where you are and adapts when life doesn't go to plan. Whether you're running 15-minute miles or 7-minute miles, the AI adapts to your body, not some arbitrary standard. You don't need permission to deserve a two-way coaching experience.
                     </div>
                 </div>
 
@@ -556,20 +705,11 @@
                     <div
                         class="faq-accordion tw-flex tw-w-full tw-select-none tw-text-xl max-md:tw-text-lg"
                     >
-                        <span>Can I request new templates?</span>
+                        <span>I'm concerned about privacy with AI coaching apps. Should I be?</span>
                         <i class="bi bi-plus tw-ml-auto tw-font-semibold"></i>
                     </div>
                     <div class="content">
-                        you can request a generic template from
-                        <a
-                            href="https://github.com/PaulleDemon/landing-pages/issues/new/choose"
-                            class="tw-underline"
-                        >
-                            Github template request</a
-                        >. If you are looking for Custom design you should
-                        <a href="https://tally.so/r/woO0Kx" class="tw-underline"
-                            >contact here</a
-                        >
+                        Not with Daptiv. We get it—trusting an AI with your training data is a big ask. Here's our approach: <strong>We never sell your data. Period.</strong> Your information is anonymized and used only to power your training plan and coaching. We couldn't tie it back to you personally even if we wanted to. <strong>You're in control.</strong> Delete your data anytime from the app. And we only collect what's needed to coach you effectively. Think of it like a human coach: what you share exists only to help you improve, and your privacy is protected.
                     </div>
                 </div>
 
@@ -579,14 +719,11 @@
                     <div
                         class="faq-accordion tw-flex tw-w-full tw-select-none tw-text-xl max-md:tw-text-lg"
                     >
-                        <span>I need a custom template?</span>
+                        <span>Can I actually talk to the AI like a real coach, or is it just canned responses?</span>
                         <i class="bi bi-plus tw-ml-auto tw-font-semibold"></i>
                     </div>
                     <div class="content">
-                        If you are looking for Custom design you can
-                        <a href="https://tally.so/r/woO0Kx" class="tw-underline"
-                            >contact here</a
-                        >
+                        Real, contextual conversation. You can explain doubts, ask "why am I doing this workout?", share that your knee felt weird, or admit you're dreading tomorrow's run. The AI maintains context about your training history, goals, and life circumstances so it doesn't just spit out generic advice. It feels more like texting a coach who knows your story.
                     </div>
                 </div>
 
@@ -596,16 +733,123 @@
                     <div
                         class="faq-accordion tw-flex tw-w-full tw-select-none tw-text-xl max-md:tw-text-lg"
                     >
-                        <span>Will you add new templates?</span>
+                        <span>I'm worried I'll start strong and quit in two weeks like every other time. What's different?</span>
                         <i class="bi bi-plus tw-ml-auto tw-font-semibold"></i>
                     </div>
                     <div class="content">
-                        New templates are added every Friday. So star ⭐️
-                        <a
-                            href="https://github.com/PaulleDemon/awesome-landing-pages"
-                            class="tw-underline"
-                            >Github</a
-                        >
+                        The app is designed to prevent the burnout-quit cycle. Static plans fail because they don't adapt when you miss a workout, get sick, or life gets chaotic—so you fall behind, feel guilty, and quit. Daptiv removes that spiral: miss a run, tell your coach, plan adjusts, you keep going. No guilt. No "falling off the wagon." Just progress at your pace.
+                    </div>
+                </div>
+
+                <div
+                    class="faq tw-w-full tw-rounded-md tw-border-[1px] tw-border-solid tw-border-[#1F2123] tw-bg-[#080808]"
+                >
+                    <div
+                        class="faq-accordion tw-flex tw-w-full tw-select-none tw-text-xl max-md:tw-text-lg"
+                    >
+                        <span>How do I know if the training advice is legit, or just AI making stuff up?</span>
+                        <i class="bi bi-plus tw-ml-auto tw-font-semibold"></i>
+                    </div>
+                    <div class="content">
+                        Daptiv's training plans are grounded in proven running science and coaching principles, including progressive overload, periodization, recovery cycles. The AI applies these principles to your specific context, so you get evidence-based training that actually fits your life.
+                    </div>
+                </div>
+
+                <div
+                    class="faq tw-w-full tw-rounded-md tw-border-[1px] tw-border-solid tw-border-[#1F2123] tw-bg-[#080808]"
+                >
+                    <div
+                        class="faq-accordion tw-flex tw-w-full tw-select-none tw-text-xl max-md:tw-text-lg"
+                    >
+                        <span>What if I miss workouts? Will the plan just pile up and make me feel worse?</span>
+                        <i class="bi bi-plus tw-ml-auto tw-font-semibold"></i>
+                    </div>
+                    <div class="content">
+                        No guilt, just recalibration. Unlike static plans that resume as if nothing happened, Daptiv rebuilds your week when life gets happens—sick kids, work deadlines, or just a rough day. You tell your AI coach what happened, and the plan adjusts so you never feel "behind." The goal is progress, not perfection.
+                    </div>
+                </div>
+
+                <div
+                    class="faq tw-w-full tw-rounded-md tw-border-[1px] tw-border-solid tw-border-[#1F2123] tw-bg-[#080808]"
+                >
+                    <div
+                        class="faq-accordion tw-flex tw-w-full tw-select-none tw-text-xl max-md:tw-text-lg"
+                    >
+                        <span>I'm coming back from injury/time off. Will this push me too hard too fast?</span>
+                        <i class="bi bi-plus tw-ml-auto tw-font-semibold"></i>
+                    </div>
+                    <div class="content">
+                        Daptiv is built for comeback runners. Your onboarding conversation covers past injuries, how long you've been off, and your current fitness. The AI builds at a rate you prefer, listening to your RPE (rate of perceived exertion) and subjective feeling after each run. If something feels off, you say so, and the plan adjusts before you get hurt again.
+                    </div>
+                </div>
+
+                <div
+                    class="faq tw-w-full tw-rounded-md tw-border-[1px] tw-border-solid tw-border-[#1F2123] tw-bg-[#080808]"
+                >
+                    <div
+                        class="faq-accordion tw-flex tw-w-full tw-select-none tw-text-xl max-md:tw-text-lg"
+                    >
+                        <span>How much time do I actually need to commit? I have a busy schedule.</span>
+                        <i class="bi bi-plus tw-ml-auto tw-font-semibold"></i>
+                    </div>
+                    <div class="content">
+                        You build your schedule, not the other way around. During onboarding, you tell Daptiv which days you can run, how much time you have, and when your long run fits best. The AI works around your life, not against it. And when your schedule implodes (because it will), you can recalibrate mid-week without starting over.
+                    </div>
+                </div>
+
+                <div
+                    class="faq tw-w-full tw-rounded-md tw-border-[1px] tw-border-solid tw-border-[#1F2123] tw-bg-[#080808]"
+                >
+                    <div
+                        class="faq-accordion tw-flex tw-w-full tw-select-none tw-text-xl max-md:tw-text-lg"
+                    >
+                        <span>Does this work if I can only run 2-3 times per week?</span>
+                        <i class="bi bi-plus tw-ml-auto tw-font-semibold"></i>
+                    </div>
+                    <div class="content">
+                        Yes. Daptiv builds plans for your actual availability, whether that's 3 runs or 6 runs per week. The AI optimizes what you can do, rather than prescribing what you "should" do and setting you up to fail. Consistency on a 3-day plan beats burnout on a 5-day plan every time.
+                    </div>
+                </div>
+
+                <div
+                    class="faq tw-w-full tw-rounded-md tw-border-[1px] tw-border-solid tw-border-[#1F2123] tw-bg-[#080808]"
+                >
+                    <div
+                        class="faq-accordion tw-flex tw-w-full tw-select-none tw-text-xl max-md:tw-text-lg"
+                    >
+                        <span>What if I need to add cross training, or run on a treadmill sometimes?</span>
+                        <i class="bi bi-plus tw-ml-auto tw-font-semibold"></i>
+                    </div>
+                    <div class="content">
+                        You control the modalities and training context. Mention to your coach that you prefer to bike two days a week during onboarding. And you can chat with your AI coach anytime to adjust for treadmill runs, outdoor conditions, or traveling. The plan adapts to your context, not a one-size-fits-all template.
+                    </div>
+                </div>
+
+                <div
+                    class="faq tw-w-full tw-rounded-md tw-border-[1px] tw-border-solid tw-border-[#1F2123] tw-bg-[#080808]"
+                >
+                    <div
+                        class="faq-accordion tw-flex tw-w-full tw-select-none tw-text-xl max-md:tw-text-lg"
+                    >
+                        <span>I've never used an AI coach before. Will it feel weird or robotic?</span>
+                        <i class="bi bi-plus tw-ml-auto tw-font-semibold"></i>
+                    </div>
+                    <div class="content">
+                        Most users are surprised how natural it feels. Research shows conversational AI coaching achieves similar trust and engagement as human coaches when it's done right. Daptiv's AI doesn't just answer questions; it remembers your goals, is always available, and adjusts your plan based on actual feedback. It's less "chatbot" and more "coach who doesn't sleep".
+                    </div>
+                </div>
+
+                <div
+                    class="faq tw-w-full tw-rounded-md tw-border-[1px] tw-border-solid tw-border-[#1F2123] tw-bg-[#080808]"
+                >
+                    <div
+                        class="faq-accordion tw-flex tw-w-full tw-select-none tw-text-xl max-md:tw-text-lg"
+                    >
+                        <span>Can I ask dumb questions without judgment?</span>
+                        <i class="bi bi-plus tw-ml-auto tw-font-semibold"></i>
+                    </div>
+                    <div class="content">
+                        There are no dumb questions. Whether you're wondering why your shins hurt, if you should run in the rain, or what "tempo pace" actually means, the AI coach explains it in context without making you feel like a beginner. You're learning as you go, and that's exactly how it should work.
                     </div>
                 </div>
             </div>
@@ -617,8 +861,8 @@
                     Still have questions?
                 </div>
                 <a
-                    href="http://"
-                    class="btn !tw-rounded-full !tw-border-[1px] !tw-border-solid !tw-border-gray-300 !tw-bg-transparent tw-transition-colors tw-duration-[0.3s]"
+                    href="mailto:support@daptiv.app"
+                    class="btn !tw-rounded-full !tw-border-[1px] !tw-border-solid !tw-border-gray-300 !tw-bg-transparent !tw-text-white tw-transition-colors tw-duration-[0.3s]"
                 >
                     Contact
                 </a>
@@ -646,7 +890,7 @@
                         <div class="tw-flex tw-gap-4 tw-mt-2">
                             <a
                                 class="btn tw-rounded-[30px] tw-bg-white tw-text-black tw-shadow-lg tw-transition-transform tw-duration-[0.3s] hover:tw-scale-[1.03]"
-                                href="https://apps.apple.com/app/daptiv"
+                                href="https://apps.apple.com/us/app/daptiv/id6751173422?mt=8&ct=landing_cta_bottom"
                                 target="_blank"
                                 rel="noopener"
                                 aria-label="Download Daptiv on the App Store"
@@ -658,7 +902,8 @@
                     </div>
 
                     <div class="tw-max-w-[60%] tw-w-full tw-h-full tw-flex max-lg:tw-max-w-full tw-place-content-end tw-place-items-end">
-                        <img src="./assets/images/screenshots/daptiv-workout-feedback.png" alt="Daptiv workout rating with RPE scale and subjective feedback options for adaptive training"
+                        <img src="./assets/images/screenshots/daptiv-workout-feedback.jpg" alt="Running workout feedback RPE scale rating adaptive training plan adjusts based on how you feel effort level subjective response"
+                            loading="lazy"
                             class="tw-h-full tw-max-h-[90%] tw-object-contain">
                     </div>
 
@@ -676,14 +921,14 @@
                     class="tw-w-[60px] tw-h-[60px]"
                 />
                 <p class="tw-text-gray-400 tw-text-center tw-max-w-md">
-                    Your AI running coach that adapts to you
+                    Training that bends with life, not breaks you
                 </p>
             </div>
 
             <!-- Download CTA -->
             <a
                 class="btn tw-rounded-[30px] tw-bg-white tw-text-black tw-shadow-lg tw-transition-transform tw-duration-[0.3s] hover:tw-scale-[1.03]"
-                href="https://apps.apple.com/app/daptiv"
+                href="https://apps.apple.com/us/app/daptiv/id6751173422?mt=8&ct=landing_footer"
                 target="_blank"
                 rel="noopener"
                 aria-label="Download Daptiv on the App Store"
@@ -711,13 +956,15 @@
         integrity="sha512-B1lby8cGcAUU3GR+Fd809/ZxgHbfwJMp0jLTVfHiArTuUt++VqSlJpaJvhNtRf3NERaxDNmmxkdx2o+aHd4bvw=="
         crossorigin="anonymous"
         referrerpolicy="no-referrer"
+        defer
     ></script>
     <script
         src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.0/ScrollTrigger.min.js"
         integrity="sha512-AY2+JxnBETJ0wcXnLPCcZJIJx0eimyhz3OJ55k2Jx4RtYC+XdIi2VtJQ+tP3BaTst4otlGG1TtPJ9fKrAUnRdQ=="
         crossorigin="anonymous"
         referrerpolicy="no-referrer"
+        defer
     ></script>
 
-    <script src="./index.js"></script>
+    <script src="./index.js" defer></script>
 </html>

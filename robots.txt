@@ -1,0 +1,7 @@
+# robots.txt for daptiv.app
+
+User-agent: *
+Allow: /
+
+# Sitemaps
+Sitemap: https://daptiv.app/sitemap.xml
